@@ -110,9 +110,19 @@ const classwork = () => {
                 // Add the overall grade to the class
                 grade = classes[i].querySelectorAll('table')[2].querySelectorAll('td')[5].innerText;
                 assignments['grade'] = grade;
+
+                // Add the points and total points total points
+                let finalTable = classes[i].querySelectorAll('table')[1].querySelectorAll('tr');
+                let finalRow = finalTable[finalTable.length - 1];
+                let points = finalRow.children[1].innerText;
+                let totalPoints = finalRow.children[2].innerText;
+                assignments['points'] = points;
+                assignments['totalPoints'] = totalPoints;
             } catch (error) {
                 // Because there are no assignments, there are no grades
                 assignments['grade'] = 'None';
+                assignments['points'] = 0;
+                assignments['totalPoints'] = 0;
             }
 
             // Add this class to the overall classes
@@ -168,6 +178,8 @@ const classwork = () => {
         // Grades Sections
         for (let c in data) {
             let id = classFunctions.cleanClassName(c) + 'Grades';
+            let p = data[c]['points'];
+            let tp = data[c]['totalPoints']
             cont.querySelector('.grades').innerHTML += `
                 <div class="grades__list hidden" id="${id}">
                     <div class="list__grade">
@@ -176,11 +188,17 @@ const classwork = () => {
                         <p class="grade__totalPoints"><b>Total Points</b></p>
                         <p class="grade__percent"><b>Percentage</b></p>
                     </div>
+                    <div class="list__grade">
+                        <p class="grade__name"><b>Total Points</b></p>
+                        <p class="grade__points"><b>${p}</b></p>
+                        <p class="grade__totalPoints"><b>${tp}</b></p>
+                        <p class="grade__percent"><b>${((p / tp) * 100).toFixed(2)}%</b></p>
+                    </div>
                 </div>
             `;
 
             for (let assignment in data[c]) {
-                if (assignment != 'grade') {
+                if (!(['grade', 'points', 'totalPoints']).includes(assignment)) {
                     let points = data[c][assignment]['points'];
                     let totalPoints = data[c][assignment]['totalPoints'];
                     cont.querySelector(`#${id}`).innerHTML += `
@@ -199,7 +217,7 @@ const classwork = () => {
     };
 
     loadNewView(getData());
-
+    // getData();
 };
 
 window.addEventListener('load', main);
