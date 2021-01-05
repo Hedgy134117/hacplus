@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+#hac-plus-content > * { font-family: 'Roboto', sans-serif; }
+#hac-plus-content b { font-weight: 700; }
+#hac-plus-content .hidden {
+  display: none !important;
+}
+#hac-plus-content .halfNhalf {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#hac-plus-content .classes { 
+    margin: 12px;
+    display: flex; 
+    flex-direction: column; 
+}
+#hac-plus-content .classes__label {
+  padding: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#hac-plus-content .classes__classes { 
+    margin: 12px;
+    display: flex; 
+    flex-direction: row;
+    overflow-x: scroll;
+}
+#hac-plus-content .classes__class {
+    margin: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 200px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 2;
+}
+#hac-plus-content .classes__class:hover {
+    cursor: pointer;
+}
+#hac-plus-content .class__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    pointer-events: none;
+}
+#hac-plus-content .class__percent {
+    font-size: 1.25em;
+    pointer-events: none;
+}
+#hac-plus-content .class__settingsIcon {
+    text-align: right;
+}
+#hac-plus-content .class__settings {
+    margin: 6px;
+    background-color: white;
+    border-radius: 6px;
+}
+#hac-plus-content .class__settings div {
+  display: flex;
+}
+#hac-plus-content .settings__color {
+  margin: 6px;
+  width: 50px;
+  height: 25px;
+  border-radius: 12px;
+}
+#hac-plus-content .settings__color--red {
+  background-color: #FF9AA2;
+}
+#hac-plus-content .settings__color--salmon {
+  background-color: #FFB7B2;
+}
+#hac-plus-content .settings__color--orange {
+  background-color: #FFDAC1;
+}
+#hac-plus-content .settings__color--yellow {
+  background-color: #E2F0CB;
+}
+#hac-plus-content .settings__color--green {
+  background-color: #B5EAD7;
+}
+#hac-plus-content .settings__color--purple {
+  background-color: #C7CEEA;
+}
+
+#hac-plus-content .grades {
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+#hac-plus-content .grades__label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#hac-plus-content .grades__list {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+}
+#hac-plus-content .list__grade {
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  padding: 12px;
+  border-bottom: 1px solid lightgray;
+}
+#hac-plus-content .grade__points, #hac-plus-content .grade__totalPoints, #hac-plus-content .grade__percent {
+  text-align: right;
+}
+
+#hac-plus-content .week {
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+#hac-plus-content .week__label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#hac-plus-content .week__grid {
+  margin: 12px;
+  display: grid;
+  grid-template-columns: 25% repeat(5, 15%);
+}
+#hac-plus-content .grid__header, #hac-plus-content .grid__box {
+  padding: 12px;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#hac-plus-content .grid__header {
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: center;
+}
+#hac-plus-content .grid__header p:first-child {
+  font-weight: 700;
+}
+#hac-plus-content .grid__header p:nth-child(2) {
+  color: gray;
+}
+#hac-plus-content .grid__box--grayed {
+  background-color: lightgray;
+}

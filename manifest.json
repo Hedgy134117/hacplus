@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "HAC+",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.eschoolplus.powerschool.com/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "classwork/styles.css"
+    ]
+}

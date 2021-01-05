@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  
+  <div class="classes">
+    <p class="classes__label">Classes</p>
+    <div class="classes__classes">
+      <div class="classes__class">
+        <p class="class__name">Calculus</p>
+        <p class="class__percent">97%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for Calculus</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">English</p>
+        <p class="class__percent">93%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for English</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">Physics</p>
+        <p class="class__percent">95%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for Physics</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">Orchestra</p>
+        <p class="class__percent">102%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for Orchestra</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">Phys Ed</p>
+        <p class="class__percent">100%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for Phys Ed</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">Comp Sci</p>
+        <p class="class__percent">100%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for Comp Sci</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="classes__class">
+        <p class="class__name">World History</p>
+        <p class="class__percent">100%</p>
+        <p class="class__settingsIcon fa fa-gear"></p>
+        <div class="class__settings hidden">
+          <p class="settings__label">Settings for World History</p>
+          <div>
+            <div class="settings__color settings__color--red"></div>
+            <div class="settings__color settings__color--salmon"></div>
+            <div class="settings__color settings__color--orange"></div>
+            <div class="settings__color settings__color--yellow"></div>
+            <div class="settings__color settings__color--green"></div>
+            <div class="settings__color settings__color--purple"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grades">
+    <p class="grades__label">Grades</p>
+    <!-- <div class="grades__list hidden" id="calculusGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Calculus 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Calculus 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="englishGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">English 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">English 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="physicsGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Physics 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Physics 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="orchestraGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Orchestra 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Orchestra 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="physedGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Phys Ed 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Phys Ed 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="compsciGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Comp Sci 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">Comp Sci 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div>
+    <div class="grades__list hidden" id="worldhistoryGrades">
+      <div class="list__grade">
+        <p class="grade__name"><b>Assignment Name</b></p>
+        <p class="grade__points"><b>Points</b></p>
+        <p class="grade__totalPoints"><b>Total Points</b></p>
+        <p class="grade__percent"><b>Percentage</b></p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">World History 1</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+      <div class="list__grade">
+        <p class="grade__name">World History 2</p>
+        <p class="grade__points">20</p>
+        <p class="grade__totalPoints">20</p>
+        <p class="grade__percent">100%</p>
+      </div>
+    </div> -->
+  </div>
+
+  <script src='index.js'></script>
+</body>
+
+</html>
