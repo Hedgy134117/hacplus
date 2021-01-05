@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 #hac-plus-content > * { font-family: 'Roboto', sans-serif; }
 #hac-plus-content b { font-weight: 700; }
+#hac-plus-content p { margin: 0.25em; }
 #hac-plus-content .hidden {
   display: none !important;
 }
